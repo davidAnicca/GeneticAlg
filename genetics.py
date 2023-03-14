@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 
-def genetic_community_detection(network, population=500, generations=50, alpha=2, mutation_rate=0.2):
+def genetic_community_detection(network, population=500, generations=50, alpha=3.45, mutation_rate=0.2):
     a_matrix = nx.adjacency_matrix(network)
     nodes_count = len(network.nodes())
 
